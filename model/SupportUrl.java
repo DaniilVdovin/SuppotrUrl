@@ -5,19 +5,15 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
 public class SupportUrl{
-    public static class CreateUrlArg {
-        public static String AllArrayArg(String url, String array[][]) {
+    public static String AllArrayArg(String url, String array[][]) {
             url+='?'+array[0][0]+'='+array[0][1];
-            for(int i=1;i<array.length;i++)
-                url+='&'+array[i][0]+'='+array[i][1];
+            for(int i=1;i<array.length;i++) url+='&'+array[i][0]+'='+array[i][1];
             return url;
-        }
-        public static String OneStringyArg(String url, String... arg) {
+    }
+    public static String OneStringyArg(String url, String... arg) {
             url+='?'+arg[0];
-            for(int i=1;i<arg.length;i++)
-                url+='&'+arg[i];
+            for(int i=1;i<arg.length;i++)url+='&'+arg[i];
             return url;
-        }
     }
     public static boolean isNetwork(Context context) {                                              //**************************************************************************//
         ConnectivityManager cm =                                                                   //С помошью менеджера сети получаем ее состояние и делаем возврат значения**//
