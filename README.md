@@ -11,17 +11,18 @@
 import static [Ваш путь].SupportUrl.*;
 ```
 Пользуемся
-```
-CreateUrlArg.OneStringyArg("file:///android_asset/index.html","D=O",[любое количество аргументов])
-```
-вернет ссылку с аргументами 
-```
-isNetwork(this)
-```
-вернет true или false
-```
-String array[][] ={{"S","Y"},
-                   {"K","A"}} 
-CreateUrlArg.AllArrayArg("file:///android_asset/index.html", array) 
-```
-вернет ссылку с аргументами 
+- вернет ссылку с аргументами 
+  ```
+   OneStringyArg("file:///android_asset/index.html","D=O",[любое количество аргументов])
+  ```
+- вернет true или false
+  ```
+  isNetwork(this)
+  ```
+- вернет ссылку с аргументами 
+  ```
+  String array[][] ={{"S","Y"},
+                     {"K","A"}} 
+  AllArrayArg("file:///android_asset/index.html", array) 
+  ```
+
